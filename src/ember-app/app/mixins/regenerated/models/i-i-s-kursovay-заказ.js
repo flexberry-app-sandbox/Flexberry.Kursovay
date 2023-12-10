@@ -9,7 +9,7 @@ export let Model = Mixin.create({
   датаОтгрузки: DS.attr('date'),
   статус: DS.attr('i-i-s-kursovay-состояние-заказа'),
   цена: DS.attr('decimal'),
-  менеджер: DS.belongsTo('i-i-s-kursovay-сотрудник', { inverse: null, async: false }),
+  сотрудник: DS.belongsTo('i-i-s-kursovay-сотрудник', { inverse: null, async: false }),
   строкаЗаказа: DS.hasMany('i-i-s-kursovay-строка-заказа', { inverse: 'заказ', async: false })
 });
 
@@ -41,8 +41,8 @@ export let ValidationRules = {
       validator('number', { allowString: true, allowBlank: true }),
     ],
   },
-  менеджер: {
-    descriptionKey: 'models.i-i-s-kursovay-заказ.validations.менеджер.__caption__',
+  сотрудник: {
+    descriptionKey: 'models.i-i-s-kursovay-заказ.validations.сотрудник.__caption__',
     validators: [
       validator('ds-error'),
       validator('presence', true),

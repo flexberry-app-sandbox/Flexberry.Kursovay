@@ -43,14 +43,14 @@ public class Zakaz {
     private Integer номер;
 
     @EdmIgnore
-    @Converter(converterClass = UUIDConverter.class, name = "Menedzher")
-    @Convert("Menedzher")
-    @Column(name = "Менеджер", length = 16, unique = true, nullable = false)
-    private UUID _menedzherid;
+    @Converter(converterClass = UUIDConverter.class, name = "Sotrudnik")
+    @Convert("Sotrudnik")
+    @Column(name = "Сотрудник", length = 16, unique = true, nullable = false)
+    private UUID _sotrudnikid;
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "Menedzher", insertable = false, updatable = false)
-    private Sotrudnik menedzher;
+    @JoinColumn(name = "Sotrudnik", insertable = false, updatable = false)
+    private Sotrudnik sotrudnik;
 
     @OneToMany(mappedBy = "zakaz", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     private List<StrokaZakaza> strokazakazas;

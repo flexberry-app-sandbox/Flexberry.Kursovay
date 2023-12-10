@@ -32,19 +32,18 @@ export default Controller.extend({
               link: 'i-i-s-kursovay-заказ-l',
               caption: i18n.t('forms.application.sitemap.kursovay.информация-о-заказе.i-i-s-kursovay-заказ-l.caption'),
               title: i18n.t('forms.application.sitemap.kursovay.информация-о-заказе.i-i-s-kursovay-заказ-l.title'),
-              icon: 'folder open',
               children: null
             }, {
               link: 'i-i-s-kursovay-накладная-l',
               caption: i18n.t('forms.application.sitemap.kursovay.информация-о-заказе.i-i-s-kursovay-накладная-l.caption'),
               title: i18n.t('forms.application.sitemap.kursovay.информация-о-заказе.i-i-s-kursovay-накладная-l.title'),
-              icon: 'briefcase',
+              icon: 'chart line',
               children: null
             }, {
               link: 'i-i-s-kursovay-документ-l',
               caption: i18n.t('forms.application.sitemap.kursovay.информация-о-заказе.i-i-s-kursovay-документ-l.caption'),
               title: i18n.t('forms.application.sitemap.kursovay.информация-о-заказе.i-i-s-kursovay-документ-l.title'),
-              icon: 'archive',
+              icon: 'folder',
               children: null
             }]
           }, {
@@ -55,13 +54,13 @@ export default Controller.extend({
               link: 'i-i-s-kursovay-товар-l',
               caption: i18n.t('forms.application.sitemap.kursovay.товар-на-складе.i-i-s-kursovay-товар-l.caption'),
               title: i18n.t('forms.application.sitemap.kursovay.товар-на-складе.i-i-s-kursovay-товар-l.title'),
-              icon: 'suitcase',
+              icon: 'table',
               children: null
             }, {
               link: 'i-i-s-kursovay-склад-l',
               caption: i18n.t('forms.application.sitemap.kursovay.товар-на-складе.i-i-s-kursovay-склад-l.caption'),
               title: i18n.t('forms.application.sitemap.kursovay.товар-на-складе.i-i-s-kursovay-склад-l.title'),
-              icon: 'folder open',
+              icon: 'list',
               children: null
             }]
           }, {
@@ -72,7 +71,7 @@ export default Controller.extend({
               link: 'i-i-s-kursovay-сотрудник-l',
               caption: i18n.t('forms.application.sitemap.kursovay.сотрудники.i-i-s-kursovay-сотрудник-l.caption'),
               title: i18n.t('forms.application.sitemap.kursovay.сотрудники.i-i-s-kursovay-сотрудник-l.title'),
-              icon: 'archive',
+              icon: 'tags',
               children: null
             }]
           }]

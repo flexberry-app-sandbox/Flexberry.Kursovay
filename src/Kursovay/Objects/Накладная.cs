@@ -59,7 +59,7 @@ namespace IIS.Kursovay
         
         private string fФИОПолучателя;
         
-        private IIS.Kursovay.Сотрудник fМатериальноОтветственноеЛицо;
+        private IIS.Kursovay.Сотрудник fСотрудник;
         
         private IIS.Kursovay.DetailArrayOfЗаписьВНакладной fЗаписьВНакладной;
         
@@ -259,34 +259,34 @@ namespace IIS.Kursovay
         /// <summary>
         /// Накладная.
         /// </summary>
-        // *** Start programmer edit section *** (Накладная.МатериальноОтветственноеЛицо CustomAttributes)
+        // *** Start programmer edit section *** (Накладная.Сотрудник CustomAttributes)
 
-        // *** End programmer edit section *** (Накладная.МатериальноОтветственноеЛицо CustomAttributes)
+        // *** End programmer edit section *** (Накладная.Сотрудник CustomAttributes)
         [PropertyStorage(new string[] {
-                "МатериальноОтветственноеЛицо"})]
+                "Сотрудник"})]
         [NotNull()]
-        public virtual IIS.Kursovay.Сотрудник МатериальноОтветственноеЛицо
+        public virtual IIS.Kursovay.Сотрудник Сотрудник
         {
             get
             {
-                // *** Start programmer edit section *** (Накладная.МатериальноОтветственноеЛицо Get start)
+                // *** Start programmer edit section *** (Накладная.Сотрудник Get start)
 
-                // *** End programmer edit section *** (Накладная.МатериальноОтветственноеЛицо Get start)
-                IIS.Kursovay.Сотрудник result = this.fМатериальноОтветственноеЛицо;
-                // *** Start programmer edit section *** (Накладная.МатериальноОтветственноеЛицо Get end)
+                // *** End programmer edit section *** (Накладная.Сотрудник Get start)
+                IIS.Kursovay.Сотрудник result = this.fСотрудник;
+                // *** Start programmer edit section *** (Накладная.Сотрудник Get end)
 
-                // *** End programmer edit section *** (Накладная.МатериальноОтветственноеЛицо Get end)
+                // *** End programmer edit section *** (Накладная.Сотрудник Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Накладная.МатериальноОтветственноеЛицо Set start)
+                // *** Start programmer edit section *** (Накладная.Сотрудник Set start)
 
-                // *** End programmer edit section *** (Накладная.МатериальноОтветственноеЛицо Set start)
-                this.fМатериальноОтветственноеЛицо = value;
-                // *** Start programmer edit section *** (Накладная.МатериальноОтветственноеЛицо Set end)
+                // *** End programmer edit section *** (Накладная.Сотрудник Set start)
+                this.fСотрудник = value;
+                // *** Start programmer edit section *** (Накладная.Сотрудник Set end)
 
-                // *** End programmer edit section *** (Накладная.МатериальноОтветственноеЛицо Set end)
+                // *** End programmer edit section *** (Накладная.Сотрудник Set end)
             }
         }
         

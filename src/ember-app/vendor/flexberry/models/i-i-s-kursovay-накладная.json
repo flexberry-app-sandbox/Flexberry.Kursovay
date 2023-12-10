@@ -65,7 +65,7 @@
     {
       "polymorphic": false,
       "presence": true,
-      "name": "материальноОтветственноеЛицо",
+      "name": "сотрудник",
       "relatedTo": "i-i-s-kursovay-сотрудник",
       "inverse": null
     }

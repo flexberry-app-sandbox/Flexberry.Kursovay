@@ -30,14 +30,14 @@ public class Sklad {
     private String адрес;
 
     @EdmIgnore
-    @Converter(converterClass = UUIDConverter.class, name = "Kladovshhik")
-    @Convert("Kladovshhik")
-    @Column(name = "Кладовщик", length = 16, unique = true, nullable = false)
-    private UUID _kladovshhikid;
+    @Converter(converterClass = UUIDConverter.class, name = "Sotrudnik")
+    @Convert("Sotrudnik")
+    @Column(name = "Сотрудник", length = 16, unique = true, nullable = false)
+    private UUID _sotrudnikid;
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "Kladovshhik", insertable = false, updatable = false)
-    private Sotrudnik kladovshhik;
+    @JoinColumn(name = "Sotrudnik", insertable = false, updatable = false)
+    private Sotrudnik sotrudnik;
 
     @OneToMany(mappedBy = "sklad", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     private List<TovarNaSklade> tovarnasklades;

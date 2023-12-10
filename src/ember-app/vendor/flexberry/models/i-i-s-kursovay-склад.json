@@ -29,7 +29,7 @@
     {
       "polymorphic": false,
       "presence": true,
-      "name": "кладовщик",
+      "name": "сотрудник",
       "relatedTo": "i-i-s-kursovay-сотрудник",
       "inverse": null
     }

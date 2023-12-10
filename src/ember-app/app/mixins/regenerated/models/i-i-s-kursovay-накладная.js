@@ -11,7 +11,7 @@ export let Model = Mixin.create({
   статус: DS.attr('i-i-s-kursovay-состояние-накладной'),
   сумма: DS.attr('decimal'),
   фИОПолучателя: DS.attr('string'),
-  материальноОтветственноеЛицо: DS.belongsTo('i-i-s-kursovay-сотрудник', { inverse: null, async: false }),
+  сотрудник: DS.belongsTo('i-i-s-kursovay-сотрудник', { inverse: null, async: false }),
   записьВНакладной: DS.hasMany('i-i-s-kursovay-запись-в-накладной', { inverse: 'накладная', async: false })
 });
 
@@ -55,8 +55,8 @@ export let ValidationRules = {
       validator('ds-error'),
     ],
   },
-  материальноОтветственноеЛицо: {
-    descriptionKey: 'models.i-i-s-kursovay-накладная.validations.материальноОтветственноеЛицо.__caption__',
+  сотрудник: {
+    descriptionKey: 'models.i-i-s-kursovay-накладная.validations.сотрудник.__caption__',
     validators: [
       validator('ds-error'),
       validator('presence', true),

@@ -49,14 +49,14 @@ public class Nakladnaya {
     private Integer номер;
 
     @EdmIgnore
-    @Converter(converterClass = UUIDConverter.class, name = "MaterialnoOtvetstvennoeLico")
-    @Convert("MaterialnoOtvetstvennoeLico")
-    @Column(name = "МатериальноОтветственноеЛицо", length = 16, unique = true, nullable = false)
-    private UUID _materialnootvetstvennoelicoid;
+    @Converter(converterClass = UUIDConverter.class, name = "Sotrudnik")
+    @Convert("Sotrudnik")
+    @Column(name = "Сотрудник", length = 16, unique = true, nullable = false)
+    private UUID _sotrudnikid;
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "MaterialnoOtvetstvennoeLico", insertable = false, updatable = false)
-    private Sotrudnik materialnootvetstvennoelico;
+    @JoinColumn(name = "Sotrudnik", insertable = false, updatable = false)
+    private Sotrudnik sotrudnik;
 
     @OneToMany(mappedBy = "nakladnaya", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     private List<ZapisVNakladnoj> zapisvnakladnojs;

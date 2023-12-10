@@ -43,7 +43,7 @@ namespace IIS.Kursovay
         
         private string fАдрес;
         
-        private IIS.Kursovay.Сотрудник fКладовщик;
+        private IIS.Kursovay.Сотрудник fСотрудник;
         
         private IIS.Kursovay.DetailArrayOfТоварНаСкладе fТоварНаСкладе;
         
@@ -118,34 +118,34 @@ namespace IIS.Kursovay
         /// <summary>
         /// Склад.
         /// </summary>
-        // *** Start programmer edit section *** (Склад.Кладовщик CustomAttributes)
+        // *** Start programmer edit section *** (Склад.Сотрудник CustomAttributes)
 
-        // *** End programmer edit section *** (Склад.Кладовщик CustomAttributes)
+        // *** End programmer edit section *** (Склад.Сотрудник CustomAttributes)
         [PropertyStorage(new string[] {
-                "Кладовщик"})]
+                "Сотрудник"})]
         [NotNull()]
-        public virtual IIS.Kursovay.Сотрудник Кладовщик
+        public virtual IIS.Kursovay.Сотрудник Сотрудник
         {
             get
             {
-                // *** Start programmer edit section *** (Склад.Кладовщик Get start)
+                // *** Start programmer edit section *** (Склад.Сотрудник Get start)
 
-                // *** End programmer edit section *** (Склад.Кладовщик Get start)
-                IIS.Kursovay.Сотрудник result = this.fКладовщик;
-                // *** Start programmer edit section *** (Склад.Кладовщик Get end)
+                // *** End programmer edit section *** (Склад.Сотрудник Get start)
+                IIS.Kursovay.Сотрудник result = this.fСотрудник;
+                // *** Start programmer edit section *** (Склад.Сотрудник Get end)
 
-                // *** End programmer edit section *** (Склад.Кладовщик Get end)
+                // *** End programmer edit section *** (Склад.Сотрудник Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Склад.Кладовщик Set start)
+                // *** Start programmer edit section *** (Склад.Сотрудник Set start)
 
-                // *** End programmer edit section *** (Склад.Кладовщик Set start)
-                this.fКладовщик = value;
-                // *** Start programmer edit section *** (Склад.Кладовщик Set end)
+                // *** End programmer edit section *** (Склад.Сотрудник Set start)
+                this.fСотрудник = value;
+                // *** Start programmer edit section *** (Склад.Сотрудник Set end)
 
-                // *** End programmer edit section *** (Склад.Кладовщик Set end)
+                // *** End programmer edit section *** (Склад.Сотрудник Set end)
             }
         }
         
