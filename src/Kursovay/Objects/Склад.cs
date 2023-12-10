@@ -43,6 +43,8 @@ namespace IIS.Kursovay
         
         private string fАдрес;
         
+        private IIS.Kursovay.Сотрудник fКладовщик;
+        
         private IIS.Kursovay.DetailArrayOfТоварНаСкладе fТоварНаСкладе;
         
         // *** Start programmer edit section *** (Склад CustomMembers)
@@ -110,6 +112,40 @@ namespace IIS.Kursovay
                 // *** Start programmer edit section *** (Склад.Номер Set end)
 
                 // *** End programmer edit section *** (Склад.Номер Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Склад.
+        /// </summary>
+        // *** Start programmer edit section *** (Склад.Кладовщик CustomAttributes)
+
+        // *** End programmer edit section *** (Склад.Кладовщик CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Кладовщик"})]
+        [NotNull()]
+        public virtual IIS.Kursovay.Сотрудник Кладовщик
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Склад.Кладовщик Get start)
+
+                // *** End programmer edit section *** (Склад.Кладовщик Get start)
+                IIS.Kursovay.Сотрудник result = this.fКладовщик;
+                // *** Start programmer edit section *** (Склад.Кладовщик Get end)
+
+                // *** End programmer edit section *** (Склад.Кладовщик Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Склад.Кладовщик Set start)
+
+                // *** End programmer edit section *** (Склад.Кладовщик Set start)
+                this.fКладовщик = value;
+                // *** Start programmer edit section *** (Склад.Кладовщик Set end)
+
+                // *** End programmer edit section *** (Склад.Кладовщик Set end)
             }
         }
         

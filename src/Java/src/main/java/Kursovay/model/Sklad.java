@@ -7,6 +7,7 @@ import Kursovay.utils.UUIDConverter;
 import javax.persistence.*;
 import java.util.UUID;
 
+import com.sap.olingo.jpa.metadata.core.edm.annotation.EdmIgnore;
 import java.util.List;
 
 /**
@@ -27,6 +28,16 @@ public class Sklad {
 
     @Column(name = "Адрес")
     private String адрес;
+
+    @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "Kladovshhik")
+    @Convert("Kladovshhik")
+    @Column(name = "Кладовщик", length = 16, unique = true, nullable = false)
+    private UUID _kladovshhikid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "Kladovshhik", insertable = false, updatable = false)
+    private Sotrudnik kladovshhik;
 
     @OneToMany(mappedBy = "sklad", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     private List<TovarNaSklade> tovarnasklades;

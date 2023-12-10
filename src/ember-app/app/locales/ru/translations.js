@@ -16,7 +16,9 @@ import IISKursovayТоварEForm from './forms/i-i-s-kursovay-товар-e';
 import IISKursovayДокументModel from './models/i-i-s-kursovay-документ';
 import IISKursovayЗаказModel from './models/i-i-s-kursovay-заказ';
 import IISKursovayЗаписьВНакладнойModel from './models/i-i-s-kursovay-запись-в-накладной';
+import IISKursovayЗаявкаНаТовараModel from './models/i-i-s-kursovay-заявка-на-товара';
 import IISKursovayНакладнаяModel from './models/i-i-s-kursovay-накладная';
+import IISKursovayОбщаяяДокументацияModel from './models/i-i-s-kursovay-общаяя-документация';
 import IISKursovayСкладModel from './models/i-i-s-kursovay-склад';
 import IISKursovayСотрудникModel from './models/i-i-s-kursovay-сотрудник';
 import IISKursovayСтрокаЗаказаModel from './models/i-i-s-kursovay-строка-заказа';
@@ -31,7 +33,9 @@ $.extend(true, translations, {
     'i-i-s-kursovay-документ': IISKursovayДокументModel,
     'i-i-s-kursovay-заказ': IISKursovayЗаказModel,
     'i-i-s-kursovay-запись-в-накладной': IISKursovayЗаписьВНакладнойModel,
+    'i-i-s-kursovay-заявка-на-товара': IISKursovayЗаявкаНаТовараModel,
     'i-i-s-kursovay-накладная': IISKursovayНакладнаяModel,
+    'i-i-s-kursovay-общаяя-документация': IISKursovayОбщаяяДокументацияModel,
     'i-i-s-kursovay-склад': IISKursovayСкладModel,
     'i-i-s-kursovay-сотрудник': IISKursovayСотрудникModel,
     'i-i-s-kursovay-строка-заказа': IISKursovayСтрокаЗаказаModel,

@@ -25,7 +25,15 @@
       "ordered": false
     }
   ],
-  "belongsTo": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "кладовщик",
+      "relatedTo": "i-i-s-kursovay-сотрудник",
+      "inverse": null
+    }
+  ],
   "hasMany": [
     {
       "name": "товарНаСкладе",

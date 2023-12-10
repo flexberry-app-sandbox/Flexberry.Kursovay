@@ -1,0 +1,23 @@
+﻿{
+  "name": "IISKursovayЗаявкаНаТовара",
+  "modelName": "i-i-s-kursovay-заявка-на-товара",
+  "className": "ЗаявкаНаТовара",
+  "nameSpace": "IIS.Kursovay",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "общаяяДокументация",
+      "relatedTo": "i-i-s-kursovay-общаяя-документация",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -14,6 +14,7 @@ CREATE TABLE Склад (
  primaryKey UUID NOT NULL,
  Адрес VARCHAR(255) NULL,
  Номер INT NULL,
+ Кладовщик UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -42,6 +43,11 @@ CREATE TABLE Накладная (
  PRIMARY KEY (primaryKey));
 
 
+CREATE TABLE ОбщаяяДокументация (
+ primaryKey UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE ЗаписьВНакладной (
  primaryKey UUID NOT NULL,
  Вес DOUBLE PRECISION NULL,
@@ -49,6 +55,12 @@ CREATE TABLE ЗаписьВНакладной (
  Сумма DOUBLE PRECISION NULL,
  Цена DOUBLE PRECISION NULL,
  Накладная UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ЗаявкаНаТовара (
+ primaryKey UUID NOT NULL,
+ ОбщаяяДокументация UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -82,7 +94,7 @@ CREATE TABLE Заказ (
  Цена DOUBLE PRECISION NULL,
  ДатаЗаполнения TIMESTAMP(3) NULL,
  Номер INT NULL,
- Кладовщик UUID NOT NULL,
+ Менеджер UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -200,11 +212,17 @@ CREATE TABLE ApplicationLog (
  ALTER TABLE ТоварНаСкладе ADD CONSTRAINT FK68cdd071f8f3c1def6a6830da38eab96386d73e3 FOREIGN KEY (Склад) REFERENCES Склад; 
 CREATE INDEX Index68cdd071f8f3c1def6a6830da38eab96386d73e3 on ТоварНаСкладе (Склад); 
 
+ ALTER TABLE Склад ADD CONSTRAINT FK1b6ae10daf209a640dc3cfe01707ce0e6ac94fbd FOREIGN KEY (Кладовщик) REFERENCES Сотрудник; 
+CREATE INDEX Index1b6ae10daf209a640dc3cfe01707ce0e6ac94fbd on Склад (Кладовщик); 
+
  ALTER TABLE Накладная ADD CONSTRAINT FK583d4fe55616d60bc5b84bc52fcf4f1b49f64d89 FOREIGN KEY (МатериальноОтветственноеЛицо) REFERENCES Сотрудник; 
 CREATE INDEX Index583d4fe55616d60bc5b84bc52fcf4f1b49f64d89 on Накладная (МатериальноОтветственноеЛицо); 
 
  ALTER TABLE ЗаписьВНакладной ADD CONSTRAINT FKf96379bd836142091424e2323e057156bc53f217 FOREIGN KEY (Накладная) REFERENCES Накладная; 
 CREATE INDEX Indexf96379bd836142091424e2323e057156bc53f217 on ЗаписьВНакладной (Накладная); 
+
+ ALTER TABLE ЗаявкаНаТовара ADD CONSTRAINT FK05dabc777a90f42a4b987f9546110042084c2d33 FOREIGN KEY (ОбщаяяДокументация) REFERENCES ОбщаяяДокументация; 
+CREATE INDEX Index05dabc777a90f42a4b987f9546110042084c2d33 on ЗаявкаНаТовара (ОбщаяяДокументация); 
 
  ALTER TABLE СтрокаЗаказа ADD CONSTRAINT FK60ca6c2aec1cf64e9da289fe444bd695f79792d1 FOREIGN KEY (Заказ) REFERENCES Заказ; 
 CREATE INDEX Index60ca6c2aec1cf64e9da289fe444bd695f79792d1 on СтрокаЗаказа (Заказ); 
@@ -218,8 +236,8 @@ CREATE INDEX Index98cffe455b6e5a44f4769c8095e48ffc149ba95d on Товар (Стр
  ALTER TABLE Товар ADD CONSTRAINT FK6150952b95c7b135cc747e77be94d341d13851ac FOREIGN KEY (ТоварНаСкладе) REFERENCES ТоварНаСкладе; 
 CREATE INDEX Index6150952b95c7b135cc747e77be94d341d13851ac on Товар (ТоварНаСкладе); 
 
- ALTER TABLE Заказ ADD CONSTRAINT FK5af582e373726479818eb3755b5aa327665e508b FOREIGN KEY (Кладовщик) REFERENCES Сотрудник; 
-CREATE INDEX Index5af582e373726479818eb3755b5aa327665e508b on Заказ (Кладовщик); 
+ ALTER TABLE Заказ ADD CONSTRAINT FK258dbad759e9fca1fb0719d797856dbd0851e4c3 FOREIGN KEY (Менеджер) REFERENCES Сотрудник; 
+CREATE INDEX Index258dbad759e9fca1fb0719d797856dbd0851e4c3 on Заказ (Менеджер); 
 
  ALTER TABLE STORMWEBSEARCH ADD CONSTRAINT FKc4378e39870eb056aec84088683297a01d2a6200 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
 

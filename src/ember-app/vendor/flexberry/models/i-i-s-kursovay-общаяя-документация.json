@@ -1,0 +1,15 @@
+﻿{
+  "name": "IISKursovayОбщаяяДокументация",
+  "modelName": "i-i-s-kursovay-общаяя-документация",
+  "className": "ОбщаяяДокументация",
+  "nameSpace": "IIS.Kursovay",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -51,7 +51,7 @@ namespace IIS.Kursovay
         
         private IIS.Kursovay.СостояниеЗаказа fСтатус;
         
-        private IIS.Kursovay.Сотрудник fКладовщик;
+        private IIS.Kursovay.Сотрудник fМенеджер;
         
         private IIS.Kursovay.DetailArrayOfСтрокаЗаказа fСтрокаЗаказа;
         
@@ -187,34 +187,34 @@ namespace IIS.Kursovay
         /// <summary>
         /// Заказ.
         /// </summary>
-        // *** Start programmer edit section *** (Заказ.Кладовщик CustomAttributes)
+        // *** Start programmer edit section *** (Заказ.Менеджер CustomAttributes)
 
-        // *** End programmer edit section *** (Заказ.Кладовщик CustomAttributes)
+        // *** End programmer edit section *** (Заказ.Менеджер CustomAttributes)
         [PropertyStorage(new string[] {
-                "Кладовщик"})]
+                "Менеджер"})]
         [NotNull()]
-        public virtual IIS.Kursovay.Сотрудник Кладовщик
+        public virtual IIS.Kursovay.Сотрудник Менеджер
         {
             get
             {
-                // *** Start programmer edit section *** (Заказ.Кладовщик Get start)
+                // *** Start programmer edit section *** (Заказ.Менеджер Get start)
 
-                // *** End programmer edit section *** (Заказ.Кладовщик Get start)
-                IIS.Kursovay.Сотрудник result = this.fКладовщик;
-                // *** Start programmer edit section *** (Заказ.Кладовщик Get end)
+                // *** End programmer edit section *** (Заказ.Менеджер Get start)
+                IIS.Kursovay.Сотрудник result = this.fМенеджер;
+                // *** Start programmer edit section *** (Заказ.Менеджер Get end)
 
-                // *** End programmer edit section *** (Заказ.Кладовщик Get end)
+                // *** End programmer edit section *** (Заказ.Менеджер Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Заказ.Кладовщик Set start)
+                // *** Start programmer edit section *** (Заказ.Менеджер Set start)
 
-                // *** End programmer edit section *** (Заказ.Кладовщик Set start)
-                this.fКладовщик = value;
-                // *** Start programmer edit section *** (Заказ.Кладовщик Set end)
+                // *** End programmer edit section *** (Заказ.Менеджер Set start)
+                this.fМенеджер = value;
+                // *** Start programmer edit section *** (Заказ.Менеджер Set end)
 
-                // *** End programmer edit section *** (Заказ.Кладовщик Set end)
+                // *** End programmer edit section *** (Заказ.Менеджер Set end)
             }
         }
         

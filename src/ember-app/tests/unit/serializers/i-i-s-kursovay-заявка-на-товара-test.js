@@ -1,8 +1,18 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-kursovay-документ', 'Unit | Model | i-i-s-kursovay-документ', {
+moduleForModel('i-i-s-kursovay-заявка-на-товара', 'Unit | Serializer | i-i-s-kursovay-заявка-на-товара', {
   // Specify the other units that are required for this test.
   needs: [
+    'serializer:i-i-s-kursovay-заявка-на-товара',
+    'service:syncer',
+    'transform:file',
+    'transform:decimal',
+    'transform:guid',
+
+    'transform:i-i-s-kursovay-состоние-заказа',
+    'transform:i-i-s-kursovay-состояние-заказа',
+    'transform:i-i-s-kursovay-состояние-накладной',
+
     'model:i-i-s-kursovay-документ',
     'model:i-i-s-kursovay-заказ',
     'model:i-i-s-kursovay-запись-в-накладной',
@@ -20,13 +30,14 @@ moduleForModel('i-i-s-kursovay-документ', 'Unit | Model | i-i-s-kursovay
     'validator:date',
     'validator:belongs-to',
     'validator:has-many',
-    'service:syncer',
   ],
 });
 
-test('it exists', function(assert) {
-  let model = this.subject();
+// Replace this with your real tests.
+test('it serializes records', function(assert) {
+  let record = this.subject();
 
-  // let store = this.store();
-  assert.ok(!!model);
+  let serializedRecord = record.serialize();
+
+  assert.ok(serializedRecord);
 });

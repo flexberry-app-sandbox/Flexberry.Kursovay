@@ -7,7 +7,9 @@
         <class>Kursovay.model.Sklad</class>
         <class>Kursovay.model.Sotrudnik</class>
         <class>Kursovay.model.Nakladnaya</class>
+        <class>Kursovay.model.ObshhayayaDokumentaciya</class>
         <class>Kursovay.model.ZapisVNakladnoj</class>
+        <class>Kursovay.model.ZayavkaNaTovara</class>
         <class>Kursovay.model.StrokaZakaza</class>
         <class>Kursovay.model.Tovar</class>
         <class>Kursovay.model.Zakaz</class>
