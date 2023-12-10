@@ -12,6 +12,7 @@ namespace IIS.Kursovay
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -31,16 +32,19 @@ namespace IIS.Kursovay
         // *** Start programmer edit section *** (СостониеЗаказа.Оплаченный CustomAttributes)
 
         // *** End programmer edit section *** (СостониеЗаказа.Оплаченный CustomAttributes)
+        [Caption("Оплаченный")]
         Оплаченный,
-        
-        // *** Start programmer edit section *** (СостониеЗаказа.Новый CustomAttributes)
-
-        // *** End programmer edit section *** (СостониеЗаказа.Новый CustomAttributes)
-        Новый,
         
         // *** Start programmer edit section *** (СостониеЗаказа.Отмененный CustomAttributes)
 
         // *** End programmer edit section *** (СостониеЗаказа.Отмененный CustomAttributes)
+        [Caption("Отмененный")]
         Отмененный,
+        
+        // *** Start programmer edit section *** (СостониеЗаказа.Новый CustomAttributes)
+
+        // *** End programmer edit section *** (СостониеЗаказа.Новый CustomAttributes)
+        [Caption("Новый")]
+        Новый,
     }
 }

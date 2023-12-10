@@ -12,6 +12,7 @@ namespace IIS.Kursovay
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -31,26 +32,31 @@ namespace IIS.Kursovay
         // *** Start programmer edit section *** (СостояниеНакладной.Отгруженная CustomAttributes)
 
         // *** End programmer edit section *** (СостояниеНакладной.Отгруженная CustomAttributes)
+        [Caption("Отгруженная")]
         Отгруженная,
         
         // *** Start programmer edit section *** (СостояниеНакладной.Готовая CustomAttributes)
 
         // *** End programmer edit section *** (СостояниеНакладной.Готовая CustomAttributes)
+        [Caption("Готовая")]
         Готовая,
         
         // *** Start programmer edit section *** (СостояниеНакладной.Новый CustomAttributes)
 
         // *** End programmer edit section *** (СостояниеНакладной.Новый CustomAttributes)
+        [Caption("Новый")]
         Новый,
         
         // *** Start programmer edit section *** (СостояниеНакладной.Выписанная CustomAttributes)
 
         // *** End programmer edit section *** (СостояниеНакладной.Выписанная CustomAttributes)
+        [Caption("Выписанная")]
         Выписанная,
         
-        // *** Start programmer edit section *** (СостояниеНакладной.Приостоновленная CustomAttributes)
+        // *** Start programmer edit section *** (СостояниеНакладной.Приостановленная CustomAttributes)
 
-        // *** End programmer edit section *** (СостояниеНакладной.Приостоновленная CustomAttributes)
-        Приостоновленная,
+        // *** End programmer edit section *** (СостояниеНакладной.Приостановленная CustomAttributes)
+        [Caption("Приостановленная")]
+        Приостановленная,
     }
 }
