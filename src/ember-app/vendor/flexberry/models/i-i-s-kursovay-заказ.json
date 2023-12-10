@@ -26,8 +26,8 @@
     },
     {
       "name": "статус",
-      "type": "string",
-      "flexberryType": "string",
+      "type": "i-i-s-kursovay-состояние-заказа",
+      "flexberryType": "СостояниеЗаказа",
       "notNull": false,
       "defaultValue": "",
       "stored": true,

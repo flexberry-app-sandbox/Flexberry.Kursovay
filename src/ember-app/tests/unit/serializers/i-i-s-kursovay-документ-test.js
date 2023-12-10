@@ -10,6 +10,7 @@ moduleForModel('i-i-s-kursovay-документ', 'Unit | Serializer | i-i-s-kur
     'transform:guid',
 
     'transform:i-i-s-kursovay-состоние-заказа',
+    'transform:i-i-s-kursovay-состояние-заказа',
     'transform:i-i-s-kursovay-состояние-накладной',
 
     'model:i-i-s-kursovay-документ',

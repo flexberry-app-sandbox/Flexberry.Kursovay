@@ -78,7 +78,7 @@ CREATE TABLE Заказ (
  primaryKey UUID NOT NULL,
  ДатаОплаты TIMESTAMP(3) NULL,
  ДатаОтгрузки TIMESTAMP(3) NULL,
- Статус VARCHAR(255) NULL,
+ Статус VARCHAR(10) NULL,
  Цена DOUBLE PRECISION NULL,
  ДатаЗаполнения TIMESTAMP(3) NULL,
  Номер INT NULL,

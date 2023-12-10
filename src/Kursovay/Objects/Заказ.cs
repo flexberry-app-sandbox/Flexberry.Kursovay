@@ -49,7 +49,7 @@ namespace IIS.Kursovay
         
         private System.DateTime fДатаОтгрузки;
         
-        private string fСтатус;
+        private IIS.Kursovay.СостояниеЗаказа fСтатус;
         
         private IIS.Kursovay.Сотрудник fКладовщик;
         
@@ -128,15 +128,14 @@ namespace IIS.Kursovay
         // *** Start programmer edit section *** (Заказ.Статус CustomAttributes)
 
         // *** End programmer edit section *** (Заказ.Статус CustomAttributes)
-        [StrLen(255)]
-        public virtual string Статус
+        public virtual IIS.Kursovay.СостояниеЗаказа Статус
         {
             get
             {
                 // *** Start programmer edit section *** (Заказ.Статус Get start)
 
                 // *** End programmer edit section *** (Заказ.Статус Get start)
-                string result = this.fСтатус;
+                IIS.Kursovay.СостояниеЗаказа result = this.fСтатус;
                 // *** Start programmer edit section *** (Заказ.Статус Get end)
 
                 // *** End programmer edit section *** (Заказ.Статус Get end)
