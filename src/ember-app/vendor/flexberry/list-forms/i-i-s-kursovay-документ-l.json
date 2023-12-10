@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovay-документ-e",
+  "editForm": "i-i-s-kursovay-документ-e",
+  "external": false,
+  "caption": "Документ",
+  "name": "IISKursovayДокументL",
+  "className": "ДокументL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovay-документ",
+      "modelProjection": "ДокументL"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+﻿{
+  "name": "IISKursovayСтрокаЗаказа",
+  "modelName": "i-i-s-kursovay-строка-заказа",
+  "className": "СтрокаЗаказа",
+  "nameSpace": "IIS.Kursovay",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "нДС",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заказ",
+      "relatedTo": "i-i-s-kursovay-заказ",
+      "inverse": "строкаЗаказа"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СтрокаЗаказаE",
+      "modelName": "i-i-s-kursovay-строка-заказа",
+      "attrs": [
+        {
+          "name": "нДС",
+          "caption": "НДС",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

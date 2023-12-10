@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Накладная",
+  "name": "IISKursovayНакладнаяE",
+  "className": "НакладнаяE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovay-накладная",
+      "modelProjection": "НакладнаяE"
+    }
+  ]
+}

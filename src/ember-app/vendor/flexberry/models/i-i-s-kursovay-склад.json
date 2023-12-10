@@ -1,0 +1,89 @@
+﻿{
+  "name": "IISKursovayСклад",
+  "modelName": "i-i-s-kursovay-склад",
+  "className": "Склад",
+  "nameSpace": "IIS.Kursovay",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "адрес",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "товарНаСкладе",
+      "relatedTo": "i-i-s-kursovay-товар-на-складе",
+      "inverse": "склад"
+    }
+  ],
+  "projections": [
+    {
+      "name": "СкладE",
+      "modelName": "i-i-s-kursovay-склад",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ТоварНаСкладеE",
+          "caption": "Товар на складе",
+          "name": "товарНаСкладе",
+          "relatedTo": "i-i-s-kursovay-товар-на-складе",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "СкладL",
+      "modelName": "i-i-s-kursovay-склад",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovay-накладная-e",
+  "editForm": "i-i-s-kursovay-накладная-e",
+  "external": false,
+  "caption": "Накладная",
+  "name": "IISKursovayНакладнаяL",
+  "className": "НакладнаяL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovay-накладная",
+      "modelProjection": "НакладнаяL"
+    }
+  ]
+}

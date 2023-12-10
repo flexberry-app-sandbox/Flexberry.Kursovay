@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Товар",
+  "name": "IISKursovayТоварE",
+  "className": "ТоварE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovay-товар",
+      "modelProjection": "ТоварE"
+    }
+  ]
+}
