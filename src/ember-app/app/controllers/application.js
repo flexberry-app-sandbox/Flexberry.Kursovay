@@ -32,13 +32,13 @@ export default Controller.extend({
               link: 'i-i-s-kursovay-заказ-l',
               caption: i18n.t('forms.application.sitemap.kursovay.информация-о-заказе.i-i-s-kursovay-заказ-l.caption'),
               title: i18n.t('forms.application.sitemap.kursovay.информация-о-заказе.i-i-s-kursovay-заказ-l.title'),
-              icon: 'tasks',
+              icon: 'calendar',
               children: null
             }, {
               link: 'i-i-s-kursovay-накладная-l',
               caption: i18n.t('forms.application.sitemap.kursovay.информация-о-заказе.i-i-s-kursovay-накладная-l.caption'),
               title: i18n.t('forms.application.sitemap.kursovay.информация-о-заказе.i-i-s-kursovay-накладная-l.title'),
-              icon: 'chart bar',
+              icon: 'suitcase',
               children: null
             }, {
               link: 'i-i-s-kursovay-документ-l',
@@ -55,13 +55,13 @@ export default Controller.extend({
               link: 'i-i-s-kursovay-товар-l',
               caption: i18n.t('forms.application.sitemap.kursovay.товар-на-складе.i-i-s-kursovay-товар-l.caption'),
               title: i18n.t('forms.application.sitemap.kursovay.товар-на-складе.i-i-s-kursovay-товар-l.title'),
-              icon: 'chart line',
+              icon: 'suitcase',
               children: null
             }, {
               link: 'i-i-s-kursovay-склад-l',
               caption: i18n.t('forms.application.sitemap.kursovay.товар-на-складе.i-i-s-kursovay-склад-l.caption'),
               title: i18n.t('forms.application.sitemap.kursovay.товар-на-складе.i-i-s-kursovay-склад-l.title'),
-              icon: 'suitcase',
+              icon: 'file',
               children: null
             }]
           }, {
@@ -72,7 +72,7 @@ export default Controller.extend({
               link: 'i-i-s-kursovay-сотрудник-l',
               caption: i18n.t('forms.application.sitemap.kursovay.сотрудники.i-i-s-kursovay-сотрудник-l.caption'),
               title: i18n.t('forms.application.sitemap.kursovay.сотрудники.i-i-s-kursovay-сотрудник-l.title'),
-              icon: 'table',
+              icon: 'building',
               children: null
             }]
           }]
