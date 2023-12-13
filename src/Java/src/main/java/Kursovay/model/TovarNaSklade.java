@@ -22,6 +22,15 @@ public class TovarNaSklade {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
+    @Column(name = "НомерЯчейки")
+    private String номерячейки;
+
+    @Column(name = "Ряд")
+    private String ряд;
+
+    @Column(name = "Этаж")
+    private String этаж;
+
     @Column(name = "Количество")
     private String количество;
 
@@ -46,6 +55,30 @@ public class TovarNaSklade {
 
     public UUID getPrimarykey() {
         return primarykey;
+    }
+
+    public String getНомерЯчейки() {
+      return номерячейки;
+    }
+
+    public void setНомерЯчейки(String номерячейки) {
+      this.номерячейки = номерячейки;
+    }
+
+    public String getРяд() {
+      return ряд;
+    }
+
+    public void setРяд(String ряд) {
+      this.ряд = ряд;
+    }
+
+    public String getЭтаж() {
+      return этаж;
+    }
+
+    public void setЭтаж(String этаж) {
+      this.этаж = этаж;
     }
 
     public String getКоличество() {

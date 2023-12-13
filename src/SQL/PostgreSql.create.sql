@@ -6,6 +6,9 @@
 CREATE TABLE ТоварНаСкладе (
  primaryKey UUID NOT NULL,
  Количество VARCHAR(255) NULL,
+ НомерЯчейки VARCHAR(255) NULL,
+ Ряд VARCHAR(255) NULL,
+ Этаж VARCHAR(255) NULL,
  Склад UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 

@@ -34,6 +34,12 @@ namespace IIS.Kursovay
     public class ТоварНаСкладе : ICSSoft.STORMNET.DataObject
     {
         
+        private string fНомерЯчейки;
+        
+        private string fРяд;
+        
+        private string fЭтаж;
+        
         private string fКоличество;
         
         private IIS.Kursovay.Склад fСклад;
@@ -72,6 +78,102 @@ namespace IIS.Kursovay
                 // *** Start programmer edit section *** (ТоварНаСкладе.Количество Set end)
 
                 // *** End programmer edit section *** (ТоварНаСкладе.Количество Set end)
+            }
+        }
+        
+        /// <summary>
+        /// НомерЯчейки.
+        /// </summary>
+        // *** Start programmer edit section *** (ТоварНаСкладе.НомерЯчейки CustomAttributes)
+
+        // *** End programmer edit section *** (ТоварНаСкладе.НомерЯчейки CustomAttributes)
+        [StrLen(255)]
+        public virtual string НомерЯчейки
+        {
+            get
+            {
+                // *** Start programmer edit section *** (ТоварНаСкладе.НомерЯчейки Get start)
+
+                // *** End programmer edit section *** (ТоварНаСкладе.НомерЯчейки Get start)
+                string result = this.fНомерЯчейки;
+                // *** Start programmer edit section *** (ТоварНаСкладе.НомерЯчейки Get end)
+
+                // *** End programmer edit section *** (ТоварНаСкладе.НомерЯчейки Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (ТоварНаСкладе.НомерЯчейки Set start)
+
+                // *** End programmer edit section *** (ТоварНаСкладе.НомерЯчейки Set start)
+                this.fНомерЯчейки = value;
+                // *** Start programmer edit section *** (ТоварНаСкладе.НомерЯчейки Set end)
+
+                // *** End programmer edit section *** (ТоварНаСкладе.НомерЯчейки Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Ряд.
+        /// </summary>
+        // *** Start programmer edit section *** (ТоварНаСкладе.Ряд CustomAttributes)
+
+        // *** End programmer edit section *** (ТоварНаСкладе.Ряд CustomAttributes)
+        [StrLen(255)]
+        public virtual string Ряд
+        {
+            get
+            {
+                // *** Start programmer edit section *** (ТоварНаСкладе.Ряд Get start)
+
+                // *** End programmer edit section *** (ТоварНаСкладе.Ряд Get start)
+                string result = this.fРяд;
+                // *** Start programmer edit section *** (ТоварНаСкладе.Ряд Get end)
+
+                // *** End programmer edit section *** (ТоварНаСкладе.Ряд Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (ТоварНаСкладе.Ряд Set start)
+
+                // *** End programmer edit section *** (ТоварНаСкладе.Ряд Set start)
+                this.fРяд = value;
+                // *** Start programmer edit section *** (ТоварНаСкладе.Ряд Set end)
+
+                // *** End programmer edit section *** (ТоварНаСкладе.Ряд Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Этаж.
+        /// </summary>
+        // *** Start programmer edit section *** (ТоварНаСкладе.Этаж CustomAttributes)
+
+        // *** End programmer edit section *** (ТоварНаСкладе.Этаж CustomAttributes)
+        [StrLen(255)]
+        public virtual string Этаж
+        {
+            get
+            {
+                // *** Start programmer edit section *** (ТоварНаСкладе.Этаж Get start)
+
+                // *** End programmer edit section *** (ТоварНаСкладе.Этаж Get start)
+                string result = this.fЭтаж;
+                // *** Start programmer edit section *** (ТоварНаСкладе.Этаж Get end)
+
+                // *** End programmer edit section *** (ТоварНаСкладе.Этаж Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (ТоварНаСкладе.Этаж Set start)
+
+                // *** End programmer edit section *** (ТоварНаСкладе.Этаж Set start)
+                this.fЭтаж = value;
+                // *** Start programmer edit section *** (ТоварНаСкладе.Этаж Set end)
+
+                // *** End programmer edit section *** (ТоварНаСкладе.Этаж Set end)
             }
         }
         
